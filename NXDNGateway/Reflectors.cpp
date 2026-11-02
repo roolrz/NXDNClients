@@ -146,7 +146,7 @@ void CReflectors::remove()
 bool CReflectors::parseJSON(const std::string& fileName)
 {
 	try {
-		std::fstream file(fileName);
+		std::ifstream file(fileName);
 
 		nlohmann::json data = nlohmann::json::parse(file);
 
